@@ -1,0 +1,26 @@
+nav{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+.xyz{
+    display : flex;
+    justify-content : center ;
+    align-items : center;
+    min-height : 100vh;
+    gap : 50 px;
+}
+.main-text{
+    max-width : 1200px;
+    margin:auto;
+}
+ul{
+    display : flex;
+    gap : 20px;
+    align-items : center;
+    list-style: none;
+}
+.human{
+    display:flex;
+    gap:40px ;
+}
