@@ -1,5 +1,5 @@
 const memberBtn = document.querySelector(".member-btn");
-
+const form = document.querySelector("form");
 memberBtn.addEventListener("click", () => {
     document.getElementById("register-form")
         .scrollIntoView({
@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("mail").value.trim();
+    const email = document.getElementById("email").value.trim();
     const college = document.getElementById("collegename").value.trim();
 
     if (name === "" || email === "" || college === "") {
@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
         return;
     }
 
-    form.style.display = "none";
+    document.querySelector(".form-section").style.display = "none";
 
     const thanks = document.querySelector(".thanks");
     thanks.style.display = "flex";
