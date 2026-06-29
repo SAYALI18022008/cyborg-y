@@ -1,3 +1,11 @@
+const memberBtn = document.querySelector(".member-btn");
+
+memberBtn.addEventListener("click", () => {
+    document.getElementById("register-form")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+});
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -18,12 +26,4 @@ form.addEventListener("submit", (e) => {
     thanks.scrollIntoView({
         behavior: "smooth"
     });
-});
-const memberBtn = document.querySelector(".member-btn");
-
-memberBtn.addEventListener("click", () => {
-    document.getElementById("register-form")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
 });
