@@ -1,19 +1,25 @@
 const memberBtn = document.querySelector(".member-btn");
-memberBtn.addEventListener("click", () => 
-{
+
+memberBtn.addEventListener("click", () => {
     document.getElementById("register-form")
-    .scrollIntoView(
-        {
-            behaviour : "smooth"
-        }
-    );
+    .scrollIntoView({
+        behavior: "smooth"
+    });
 });
+
 const form = document.querySelector("form");
-form.addEventListener("submit" , (e) =>
-{
+
+form.addEventListener("submit", (e) => {
     e.preventDefault();
-    document.querySelector(".thanks").style.display = "none";
-    document.querySelector(".thanks").style.display = "flex";
-    document.querySelector(".thanks")
-    .scrollIntoView({behavior : "smooth"});
+
+    form.style.display = "none";
+
+    
+    const thanks = document.querySelector(".thanks");
+    thanks.style.display = "flex";
+
+
+    thanks.scrollIntoView({
+        behavior: "smooth"
+    });
 });

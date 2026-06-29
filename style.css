@@ -36,7 +36,7 @@ ul{
     width : 500px;
 }
 .main-text h1{
-    font-size:60px;
+    font-size: clamp(2.2rem, 6vw, 4rem);
     line-height:1.1;
 }
 .main-text p{
@@ -116,11 +116,16 @@ footer{
     margin-bottom:50px;
     font-size:50px;
 }
+
 .main-img{
     position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
+}
+.main-img img{
+    max-width:100%;
+    height:auto;
 }
 .main-img::before{
     content:"";
@@ -148,5 +153,25 @@ footer{
     }
     100%{
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+@media (max-width: 768px)
+{
+    .xyz{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+        gap:15px;
+    }
+    .main-img img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    .human{
+        flex-direction: column;
+        align-items:center;
     }
 }
