@@ -19,3 +19,11 @@ form.addEventListener("submit", (e) => {
         behavior: "smooth"
     });
 });
+const memberBtn = document.querySelector(".member-btn");
+
+memberBtn.addEventListener("click", () => {
+    document.getElementById("register-form")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+});
